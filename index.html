@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sugam Shrestha</title>
+	<link rel="stylesheet" type="text/css" href="heh.css">
+	<style>
+		body {
+			background-image: url('ohh.jpg');
+			background-position: center;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.header {
+			background-color: ghostwhite;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.header h1 {
+			margin: 0;
+			font-size: 60px;
+			letter-spacing: 2px;
+			text-shadow: 1px 1px #000;
+		}
+		.navbar {
+			background-color: #f2f2f2;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+		.navbar ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			list-style: none;
+		}
+		.navbar li {
+			margin: 0 10px;
+		}
+		.navbar a {
+			color: #333;
+			text-decoration: none;
+			padding: 5px;
+			border-radius: 5px;
+			transition: all 0.3s ease-in-out;
+		}
+		.navbar a:hover {
+			background-color: #555555;
+			color: #fff;
+		}
+		.hero {
+			background-image: url('https://picsum.photos/1920/1080');
+			background-size: cover;
+			background-position: center;
+			height: 500px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			position: relative;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+		.hero h2 {
+			font-size: 60px;
+			margin: 0;
+			color: #fff;
+			text-shadow: 1px 1px #000;
+		}
+		.hero p {
+			font-size: 24px;
+			color: #fff;
+			margin: 20px 0;
+			text-shadow: 1px 1px #000;
+		}
+		.hero button {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			font-size: 20px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		.hero button:hover {
+			background-color: #0056b3;
+		}
+		.feature {
+			padding: 50px 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		}
+		.feature .box {
+			background-color: #fff;
+			border-radius: 5px;
+			padding: 20px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			margin: 20px;
+			flex-basis: 30%;
+			display: flex
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+	}
+	.feature .box:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	}
+	.feature .box h3 {
+		font-size: 24px;
+		margin: 0;
+	}
+	.feature .box p {
+		font-size: 16px;
+		color: #666;
+		margin: 10px 0;
+	}
+	.feature .box i {
+		font-size: 50px;
+		color: #007bff;
+		margin-bottom: 20px;
+	}
+	.cta {
+		background-color: #007bff;
+		color: #fff;
+		padding: 100px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+	.cta h2 {
+		font-size: 60px;
+		margin: 0;
+		text-shadow: 1px 1px #000;
+	}
+	.cta button {
+		background-color: #fff;
+		color: #007bff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		border: none;
+		font-size: 20px;
+		cursor: pointer;
+		margin-top: 30px;
+		transition: all 0.3s ease-in-out;
+	}
+	.cta button:hover {
+		background-color: #D1E231;
+		color: #fff;
+	}
+	footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+/* Style the form container */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Style the form headings */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Style the form labels */
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Style the form inputs */
+input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the form account number input */
+#account-number input {
+  display: block;
+}
+
+/* Style the form submit button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Show the account number input when the "Account Number" option is selected */
+#payment option[value="account_number"]:checked ~ #account-number {
+  display: block;
+}
+	
+</style>
+</head>
+<body>
+	<header class="header">
+		<h1><font face="cooper black" color="#F3E5AB"> Sugam Shrestha</font></h1>
+	</header>
+	<nav class="navbar">
+		<ul>
+			<li><a href="#heh">Home</a></li>
+			<li><a href="profile.html">About</a></li>
+			<li><a href="feature.html">Services</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<ul>
+		<li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1593429895%3A1675867850634069&continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&ec=GAlA8wE&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession" class="button">Sign In</a></li>
+		<li><a href="#Subscribe to our service" class="button">Subscribe</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="box">
+			<h1>Welcome to My Homepage</h1>
+			<p>Hello, I'm Sugam Shrestha. I'm a passionate and experienced professional with a strong interest in technology, business, and personal development. Through this website, I aim to share my knowledge and provide valuable resources to help you achieve your goals. Thanks for visiting!</p>
+			<a href="#yo" class="button">Learn More</a>
+		</div>
+	</div>
+	</div>
+
+		<div class="feature">
+			<img src="https://picsum.photos/500/300" >
+			<div>
+				<br><br><br><br><br><br><br><br><br>
+				<h3>Our Amazing Feature</h3>
+				<p>"Welcome to our website, where we strive to provide students with the best study materials from the internet. We understand the importance of education and the challenges that students face in obtaining the necessary resources to succeed. That's why we have gathered a vast collection of materials from various sources, including textbooks, notes, and video tutorials, to help students stay ahead in their studies. Whether you're looking for help with a specific subject or just want to broaden your knowledge, we have something for everyone. Explore our site today and discover the tools you need to achieve your academic goals."</p>
+			</div>
+		</div>
+	<section class="hero">
+		<div class="container" id="yo">
+			<h2>Features and Services</h2>
+			<p>Our website offers a comprehensive note-taking feature that allows students to take organized and efficient notes to support their learning and academic success.<br> <font color="whitesmoke">-Sugam Shrestha</font></p>
+			<a href="feature.html" class="button"><font color="white"> Learn More</font></a>
+		</div>
+	</section>
+	<section class="feature">
+		<div class="box">
+			<i class="fas fa-chart-pie"></i>
+			<h3>Analytics</h3>
+			<p>We analyse new answer for your question which can be suitable for you abd suitable for you.</p>
+		</div>
+			<div class="box">
+		<i class="fas fa-cog"></i>
+		<h3>Customization</h3>
+		<p>We customize our notes every year, incase there is new syllabus for different subjects.</p>
+	</div>
+	<div class="box">
+		<i class="fas fa-mobile-alt"></i>
+		<h3>Mobile-Friendly</h3>
+		<p>This website is mobile friendly too.It is basically focused for mobile purpose.</p>
+	</div>
+	<div class="box">
+		<i class="fas fa-mobile-alt"></i>
+		<h3>Helper</h3>
+		<p>AI will help you to solve your problems.</p>
+	</div>
+</section>
+<section class="cta">
+	<div class="container" id="heh">
+		<h2>Let's Start Today!!</h2>
+		<button><a href="project.html"><font color="blue"> Get Started</font></a></button>
+	</div>
+</section>
+<br><br><br><br><br><br><br><br><br>
+
+<form action="submit-form.php" method="post">
+	<section id="Subscribe to our service">
+  <h2>Subscribe to our service</h2></section>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="payment">Payment method:</label>
+  <select id="payment" name="payment">
+    <option value="credit_card">Credit Card</option>
+    <option value="account_number">Account Number</option>
+  </select>
+  
+  <div id="account-number" style="display:none">
+    <label for="account-number">Account number:</label>
+    <input type="text" id="account-number" name="account_number">
+  </div>
+  
+  <button type="submit">Subscribe</button>
+</form>
+<br><br><br><br><br><br>
+<footer>
+      <p>&copy; 2023 Sugam Shrestha</p>
+    </footer>
+</body>
+</html>
